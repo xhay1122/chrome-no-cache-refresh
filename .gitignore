@@ -1,0 +1,5 @@
+# idea ignore
+.idea/
+
+# key ignore
+key.pem

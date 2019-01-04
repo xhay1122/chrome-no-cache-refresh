@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome No Cache Refresh",
+  "description": "切换host后，只要点一下插件就能立即对浏览器生效，并刷新当前页面。",
+  "version": "0.0.1",
+  "minimum_chrome_version": "71",
+  "author": "xhay",
+  "icons": {
+    "64": "img/iconx64.png",
+    "128": "img/iconx128.png",
+    "256": "img/iconx256.png"
+  },
+  "background": {
+    "scripts": [
+      "index.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "img/iconx19.png",
+      "38": "img/iconx38.png"
+    },
+    "default_title": "Click to refresh"
+  },
+  "permissions": [
+    "tabs",
+    "chrome://net-internals/#sockets",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "homepage_url": "https://xhay1122.com"
+}
