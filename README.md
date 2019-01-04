@@ -5,7 +5,7 @@
 
 ## 安装教程
 
-### 启动chrome权限
+### 1、启动chrome权限
 
 打开 [chrome://flags/#extensions-on-chrome-urls](chrome://flags/#extensions-on-chrome-urls) ；
 
@@ -13,14 +13,18 @@
 
 最后重启浏览器。
 
-### 打开开发者模式
+### 2、打开开发者模式
 
 打开 [chrome://extensions/](chrome://extensions/) ，右上角点击开启开发者模式。
 
-### 下载插件
+### 3、下载插件
 
-[点击下载](https://github.com/xhay1122/chrome-no-cache-refresh/raw/master/chrome-no-cache-refresh.crx);
+[chrome-no-cache-refresh.crx](https://github.com/xhay1122/chrome-no-cache-refresh/raw/master/chrome-no-cache-refresh.crx)
 
-### 安装插件
+### 4、安装插件
 
 从下载目录中拖拽插件到 [chrome://extensions/](chrome://extensions/) 页面安装。
+
+## 使用方法
+
+点击扩展程序栏的图标，自动刷新当前页面
