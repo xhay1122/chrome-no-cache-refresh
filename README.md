@@ -3,15 +3,17 @@
 
 这时候只要点一下插件就能立即对浏览器生效，并能够自动刷新当前页面。
 
+支持Chrome 71.0以上版本。
+
 ## 安装教程
 
 ### 1、启动chrome权限
 
 打开 [chrome://flags/#extensions-on-chrome-urls](chrome://flags/#extensions-on-chrome-urls) ；
 
-并设置Extensions on chrome:// URLs选项为Enabled；
+设置Extensions on chrome:// URLs选项为Enabled；
 
-最后重启浏览器。
+然后根据提示重启浏览器。
 
 ### 2、打开开发者模式
 
@@ -28,3 +30,11 @@
 ## 使用方法
 
 点击扩展程序栏的图标，自动刷新当前页面
+
+## 常见问题
+
+。。。
+
+## TODO
+
+。。。
