@@ -3,3 +3,10 @@
 
 # key ignore
 key.pem
+
+# package ignore (optional)
+# *.jar
+# *.war
+*.zip
+# *.tar
+# *.tar.gz
