@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Chrome No Cache Refresh",
   "description": "切换host后，只要点一下插件就能立即对浏览器生效，并刷新当前页面。",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "xhay",
   "icons": {
     "64": "img/iconx64.png",
@@ -14,6 +14,7 @@
       "index.js"
     ]
   },
+  "options_page": "options.html",
   "browser_action": {
     "default_icon": {
       "19": "img/iconx19.png",
@@ -23,6 +24,7 @@
   },
   "permissions": [
     "activeTab",
+    "storage",
     "chrome://net-internals/#sockets",
     "http://*/*",
     "https://*/*"

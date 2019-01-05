@@ -5,19 +5,34 @@
  */
 
 (function () {
-    const _hackJSText = `
-    // 点击 Close idle sockets 和 Flush socket pools 按钮
-    ;(function(){
-        // 执行Chrome命令
-        window.g_browser.sendFlushSocketPools();
-        // 新打开的页面自动关闭
-        window.close();
-    })();
-    `;
+
+    const _hackJSText = [];
+    // 头部
+    _hackJSText.push(`
+        // 点击 Close idle sockets 和 Flush socket pools 按钮
+        ;(function(){
+            // 执行Chrome命令
+    `);
+
+    // 命令
+    if (Array.isArray(_cncrArg)) {
+        _cncrArg.map(function (cmd) {
+            _hackJSText.push(`
+                ${cmd};
+            `)
+        });
+    }
+
+    // 结尾
+    _hackJSText.push(`
+            // 新打开的页面自动关闭
+            window.close();
+        })();
+    `);
 
     const script = document.createElement('script');
     script.type = 'text/javascript';
-    script.text = _hackJSText;
+    script.text = _hackJSText.join('');
 
     document.body.appendChild(script);
 })();

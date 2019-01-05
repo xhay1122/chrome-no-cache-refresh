@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>chrome no cache refresh setting</title>
+    <link rel="stylesheet" href="css/options.css" type="text/css">
+</head>
+<body>
+<div class="m-hd">
+    <div class="m-logo">
+        <img src="img/iconx128.png">
+    </div>
+    <h1 class="m-name">Chrome No Cache Refresh</h1>
+    <div class="m-desc">
+        解决切换host后，Chrome不能立马生效的问题。
+        <br>
+        使用该插件，只需要点击右上角的图标就能够立马让host生效，并贴心的为你刷新当前页面。
+    </div>
+</div>
+<div class="m-bd">
+    <div class="m-card">
+        <div class="m-tit">自动刷新</div>
+        <div class="m-cont">
+            <div class="m-row">
+                <label>
+                    <input type="checkbox" id="js-auto-reload">
+                    <span>点击插件后是否自动刷新当前激活的tab页</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="m-card">
+        <div class="m-tit">执行内容</div>
+        <div class="m-cont">
+            <div class="m-row">
+                <label>
+                    <input type="checkbox" id="js-host-cache">
+                    <span>Clear host cache</span>
+                </label>
+                <p class="tips">
+                    正常情况，可以不设置该选项，因为在切换host之后，chrome会自动清除dns缓存。可以在 chrome://net-internals/#dns 中查看Active
+                    entries是否为0，或者下方表格对应host标记为过期。
+                    <br>
+                    如果发现dns缓存依旧有效，可以勾选该项。
+                </p>
+            </div>
+            <div class="m-row">
+                <label>
+                    <input type="checkbox" id="js-idle-sockets">
+                    <span>Close idle sockets</span>
+                </label>
+                <p class="tips">
+                    关闭空闲的sockets连接。
+                </p>
+            </div>
+            <div class="m-row">
+                <label>
+                    <input type="checkbox" id="js-socket-pools">
+                    <span>Flush socket pools</span>
+                </label>
+                <p class="tips">
+                    刷新所有sockets连接池，关键操作，如非必要，请保持勾选。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="m-btns">
+        <button id="js-save">
+            <span>保存更改</span>
+        </button>
+    </div>
+</div>
+<div id="js-page-tip" class="m-page-tip"></div>
+<script type="text/javascript" src="js/options.js"></script>
+</body>
+</html>
