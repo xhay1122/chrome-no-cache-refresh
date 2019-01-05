@@ -3,7 +3,6 @@
   "name": "Chrome No Cache Refresh",
   "description": "切换host后，只要点一下插件就能立即对浏览器生效，并刷新当前页面。",
   "version": "0.0.2",
-  "minimum_chrome_version": "71",
   "author": "xhay",
   "icons": {
     "64": "img/iconx64.png",

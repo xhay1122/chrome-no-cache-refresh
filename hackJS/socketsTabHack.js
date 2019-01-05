@@ -8,12 +8,10 @@
     const _hackJSText = `
     // 点击 Close idle sockets 和 Flush socket pools 按钮
     ;(function(){
-        console.log('======hack.js start run======');
-        window.g_browser.sendCloseIdleSockets();
+        // 执行Chrome命令
         window.g_browser.sendFlushSocketPools();
         // 新打开的页面自动关闭
         window.close();
-        console.log('======hack.js run finish======');
     })();
     `;
 
