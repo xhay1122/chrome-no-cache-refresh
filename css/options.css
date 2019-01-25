@@ -117,3 +117,11 @@ body {
     color: #3c763d;
     background-color: #dff0d8;
 }
+
+.tips {
+    font-style: italic;
+}
+
+.tips b {
+    font-weight: bold;
+}
