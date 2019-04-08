@@ -4,9 +4,9 @@
 
 const socketsTabUrl = 'chrome://net-internals/#sockets';
 const CmdLink = {
-    clearHostCache: 'window.g_browser.sendClearHostResolverCache()',
-    closeIdleSockets: 'window.g_browser.sendCloseIdleSockets()',
-    flushSocketPools: 'window.g_browser.sendFlushSocketPools()',
+    clearHostCache: "document.getElementById('dns-view-clear-cache').click();",
+    closeIdleSockets: "document.getElementById('sockets-view-close-idle-button').click();",
+    flushSocketPools: "document.getElementById('sockets-view-flush-button').click();"
 };
 
 // 插入变量和脚本
