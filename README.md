@@ -15,7 +15,7 @@
 
 根据提示重启浏览器。
 
-[安装地址 地址](https://chrome.google.com/webstore/detail/chrome-no-cache-refresh/cjbabfkaicdfoahaabkheejnkbomdogk)
+[chrome商店中安装插件](https://chrome.google.com/webstore/detail/chrome-no-cache-refresh/cjbabfkaicdfoahaabkheejnkbomdogk)
 
 ### 方式2：手动安装
 
