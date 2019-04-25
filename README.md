@@ -7,7 +7,15 @@
 
 ### 方式1：chrome 网上应用店
 
-暂不可用，正在提交到应用商店中...
+开启权限：
+
+打开 chrome://flags/#extensions-on-chrome-urls ；
+
+设置Extensions on chrome:// URLs选项为Enabled；
+
+根据提示重启浏览器。
+
+[安装地址 地址](https://chrome.google.com/webstore/detail/chrome-no-cache-refresh/cjbabfkaicdfoahaabkheejnkbomdogk)
 
 ### 方式2：手动安装
 
